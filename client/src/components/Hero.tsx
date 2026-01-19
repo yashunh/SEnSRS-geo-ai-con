@@ -24,11 +24,14 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="mb-8"
+            className="mb-8 flex flex-col items-center gap-4"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-bold tracking-widest text-primary uppercase border border-primary/20 rounded bg-primary/5 backdrop-blur-md">
               <Zap className="w-3 h-3" />
               IIT Ropar • Centre of Excellence
+            </div>
+            <div className="text-sm font-bold text-slate-500 uppercase tracking-[0.2em]">
+              Sponsored by <span className="text-primary">Aimil Ltd.</span>
             </div>
           </motion.div>
 
@@ -67,9 +70,10 @@ export default function Hero() {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-emerald-600 group-hover:opacity-90 transition-opacity" />
             </a>
-            <a href="#schedule" className="inline-flex items-center px-10 py-5 text-lg font-black border-2 border-slate-200 hover:border-primary hover:bg-primary/5 text-slate-900 transition-all rounded-sm">
-              FULL BROCHURE
-            </a>
+            <div className="flex flex-col items-start justify-center px-6 border-l-2 border-primary/20">
+              <span className="text-xs font-black uppercase tracking-widest text-slate-400">Event Dates</span>
+              <span className="text-xl font-black text-primary uppercase italic">27 - 31 January 2026</span>
+            </div>
           </motion.div>
 
           <motion.div 

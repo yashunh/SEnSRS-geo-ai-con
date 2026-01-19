@@ -7,9 +7,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
             <h3 className="text-white text-xl font-bold mb-4 font-display">SEnSRS</h3>
-            <p className="text-sm leading-relaxed mb-6">
+            <p className="text-sm leading-relaxed mb-4">
               Centre of Excellence Socio-Environmental Sustainability for River Sand Mining at IIT Ropar.
             </p>
+            <div className="mb-6">
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Supported By</p>
+              <div className="bg-white/5 border border-white/10 p-3 rounded flex items-center justify-center">
+                <span className="text-white font-black italic tracking-tighter">AIMIL LTD.</span>
+              </div>
+            </div>
             <div className="flex gap-4">
               <a href="#" className="hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
               <a href="#" className="hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
