@@ -3,9 +3,9 @@ import { CheckCircle2, MapPin, Ticket } from "lucide-react";
 
 export default function Registration() {
   return (
-    <section id="register" className="py-24 bg-foreground text-white relative overflow-hidden">
+    <section id="register" className="py-24 bg-slate-900 text-white relative overflow-hidden">
       {/* Abstract background shapes */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="container px-4 mx-auto relative z-10">
