@@ -19,8 +19,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/">
             <a className="text-xl font-bold font-display tracking-tighter flex items-center gap-2">
-              <span className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white text-lg">G</span>
-              GeoAI CON
+              <img src="https://sensrs.com/_next/image?url=%2Fimages%2Fsensrsfooterlogo-removebg.png&w=3840&q=75" alt="SEnSRS Logo" className="h-10 w-auto" />
+              <span className="hidden sm:inline">GeoAI CON</span>
             </a>
           </Link>
 

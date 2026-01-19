@@ -10,13 +10,13 @@ export default function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/90 via-primary/40 to-slate-950" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(2,6,23,0.8)_100%)]" />
       </div>
 
       {/* Grid Pattern Overlay */}
       <div className="absolute inset-0 z-0 opacity-20" 
-           style={{ backgroundImage: 'radial-gradient(circle, #3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+           style={{ backgroundImage: 'radial-gradient(circle, #10b981 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
       <div className="container relative z-10 px-4 pt-32 pb-20 mx-auto">
         <div className="flex flex-col items-center text-center">
@@ -38,8 +38,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="max-w-5xl mx-auto mb-6 text-6xl font-black tracking-tighter md:text-8xl font-display uppercase italic"
           >
-            GeoAI <span className="text-primary">CON</span> <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-blue-500">Inter-Session</span>
+            GeoAI <span className="text-white">CON</span> <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-green-300 to-emerald-500">Inter-Session</span>
           </motion.h1>
 
           <motion.div

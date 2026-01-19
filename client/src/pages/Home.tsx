@@ -65,9 +65,9 @@ export default function Home() {
           <div className="flex whitespace-nowrap animate-infinite-scroll">
             {[1,2,3,4].map(i => (
               <div key={i} className="flex gap-12 items-center mx-12">
-                <span className="text-6xl md:text-8xl font-black italic uppercase opacity-20 text-white">Hands-on Training</span>
-                <span className="text-6xl md:text-8xl font-black italic uppercase text-white">Regulatory Interaction</span>
-                <span className="text-6xl md:text-8xl font-black italic uppercase opacity-20 text-white">Expert Sessions</span>
+                <span className="text-6xl md:text-8xl font-black italic uppercase opacity-20 text-white">SEnSRS</span>
+                <span className="text-6xl md:text-8xl font-black italic uppercase text-white">IIT ROPAR</span>
+                <span className="text-6xl md:text-8xl font-black italic uppercase opacity-20 text-white">GeoAI CON</span>
               </div>
             ))}
           </div>
