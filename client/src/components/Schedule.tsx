@@ -41,49 +41,47 @@ const scheduleData = [
 
 export default function Schedule() {
   return (
-    <section id="schedule" className="py-24 bg-background">
+    <section id="schedule" className="py-24 bg-slate-950 border-t border-white/5">
       <div className="container px-4 mx-auto">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-4xl font-bold font-display text-foreground">Workshop Schedule</h2>
-          <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            A comprehensive curriculum designed to provide practical skills in modern geospatial technologies.
-          </p>
+        <div className="mb-16">
+          <span className="text-primary font-black uppercase tracking-widest text-sm italic">The Curriculum</span>
+          <h2 className="text-5xl md:text-7xl font-black font-display text-white uppercase italic tracking-tighter mt-2">Event Schedule</h2>
         </div>
 
-        <div className="grid gap-6 max-w-4xl mx-auto">
+        <div className="grid gap-4">
           {scheduleData.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative overflow-hidden bg-card rounded-2xl border border-border/50 shadow-sm hover:shadow-md transition-all p-6 md:p-8 flex flex-col md:flex-row gap-6 md:items-center"
+              className="group relative overflow-hidden bg-slate-900/40 border border-white/5 hover:border-primary/50 transition-all p-8 flex flex-col md:flex-row gap-8 md:items-center"
             >
-              <div className="md:w-32 flex-shrink-0">
-                <div className="flex items-center gap-2 text-primary font-bold text-xl">
-                  <Calendar className="w-5 h-5" />
-                  {item.day}
-                </div>
+              <div className="md:w-40 flex-shrink-0">
+                <div className="text-slate-500 font-black text-6xl opacity-20 group-hover:text-primary transition-colors">0{index + 1}</div>
+                <div className="text-primary font-black text-xl uppercase italic tracking-widest -mt-4 relative z-10">{item.day}</div>
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-xl md:text-2xl font-bold mb-2 text-foreground font-display group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-4xl font-black mb-4 text-white uppercase italic tracking-tight leading-none">
                   {item.title}
                 </h3>
-                <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    <span className="font-medium text-foreground">{item.speaker}</span>
+                <div className="flex flex-wrap items-center gap-6">
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Expert Lead</span>
+                    <span className="font-bold text-lg text-slate-200">{item.speaker}</span>
                   </div>
-                  <span className="hidden md:inline text-border">•</span>
-                  <span className="text-sm italic">{item.role}</span>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">Designation</span>
+                    <span className="text-sm font-bold text-slate-400">{item.role}</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2 md:w-48 justify-end">
                 {item.tags.map(tag => (
-                  <span key={tag} className="px-3 py-1 text-xs font-medium rounded-full bg-secondary/10 text-secondary border border-secondary/20">
+                  <span key={tag} className="px-3 py-1 text-[10px] font-black uppercase tracking-widest border border-white/10 text-slate-400 group-hover:border-primary/30 group-hover:text-primary transition-colors">
                     {tag}
                   </span>
                 ))}
