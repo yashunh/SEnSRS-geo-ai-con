@@ -35,7 +35,14 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button className="rounded-full px-6">Register</Button>
+            <a 
+              href="https://forms.gle/9CxmNFC39GQf5jtp7" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2 text-sm font-medium text-white hover:bg-primary/90 transition-colors"
+            >
+              Register
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,7 +69,14 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button className="w-full rounded-full">Register</Button>
+            <a 
+              href="https://forms.gle/9CxmNFC39GQf5jtp7" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full rounded-full bg-primary px-6 py-3 text-center font-medium text-white"
+            >
+              Register
+            </a>
           </div>
         </div>
       )}

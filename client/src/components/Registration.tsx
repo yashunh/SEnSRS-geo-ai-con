@@ -80,9 +80,14 @@ export default function Registration() {
               </div>
             </div>
 
-            <button className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+            <a 
+              href="https://forms.gle/9CxmNFC39GQf5jtp7" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
+            >
               PROCEED TO REGISTER
-            </button>
+            </a>
             <p className="text-center text-[10px] font-black uppercase tracking-widest text-slate-400 mt-4">
               **For accommodation, IIT Rules will be Applicable
             </p>

@@ -64,7 +64,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-wrap justify-center gap-6"
           >
-            <a href="#register" className="group relative inline-flex items-center px-10 py-5 text-lg font-black transition-all transform bg-primary text-white hover:scale-105 overflow-hidden rounded-sm">
+            <a href="https://forms.gle/9CxmNFC39GQf5jtp7" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center px-10 py-5 text-lg font-black transition-all transform bg-primary text-white hover:scale-105 overflow-hidden rounded-sm">
               <span className="relative z-10 flex items-center gap-2">
                 REGISTER NOW <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
