@@ -4,7 +4,7 @@ import { Calendar, User, Clock } from "lucide-react";
 const scheduleData = [
   {
     day: "Day 1",
-    title: "Hands on tutorial on DGPS",
+    title: "DGPS Surveying",
     speaker: "Ashish Kumar Maurya",
     role: "Senior Field Surveyor",
     tags: ["Technical", "Field Work"]
@@ -18,23 +18,23 @@ const scheduleData = [
   },
   {
     day: "Day 3",
-    title: "Hands on tutorial on Multispectral Drone/TLS/Hyperspectral Drone",
+    title: "Multispectral Drone/TLS/Hyperspectral Drone",
     speaker: "Aravind k. Suresh & Avinash Sharma",
-    role: "PhD Scholars",
+    role: "Researcher",
     tags: ["Advanced Tech", "Research"]
   },
   {
     day: "Day 4",
     title: "Hands on tutorial on Bathymetry survey",
-    speaker: "Faiz",
-    role: "PhD Scholar",
+    speaker: "Fayaz Ahmad Bhat",
+    role: "Researcher",
     tags: ["Water Bodies", "Survey"]
   },
   {
     day: "Day 5",
-    title: "Panel Meeting",
-    speaker: "Mining Officers, SEIAA & SEAC members",
-    role: "Regulatory Body",
+    title: "Panel Meeting with Stakeholders",
+    speaker: "Only for SEIAA/SEAC/Department of Mines and Geology",
+    role: "",
     tags: ["Discussion", "Strategy"]
   }
 ];
@@ -68,14 +68,18 @@ export default function Schedule() {
                   {item.title}
                 </h3>
                 <div className="flex flex-wrap items-center gap-6">
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Expert Lead</span>
-                    <span className="font-bold text-lg text-slate-700">{item.speaker}</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Designation</span>
-                    <span className="text-sm font-bold text-slate-500">{item.role}</span>
-                  </div>
+                  {item.speaker && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Expert Lead</span>
+                      <span className="font-bold text-lg text-slate-700">{item.speaker}</span>
+                    </div>
+                  )}
+                  {item.role && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Designation</span>
+                      <span className="text-sm font-bold text-slate-500">{item.role}</span>
+                    </div>
+                  )}
                 </div>
               </div>
 

@@ -41,8 +41,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="max-w-5xl mx-auto mb-6 text-6xl font-black tracking-tighter md:text-8xl font-display uppercase italic text-slate-900"
           >
-            GeoAI <span className="text-primary">CON</span> <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary">Inter-Session</span>
+            GEO AI <span className="text-primary">CON</span> <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary">Intersession</span>
           </motion.h1>
 
           <motion.div
@@ -80,13 +80,14 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
-            className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl"
+            className="mt-24 grid grid-cols-2 md:grid-cols-5 gap-4 w-full max-w-6xl"
           >
             {[
-              { label: "DGPS Surveying", detail: "Hands-on Field Work" },
+              { label: "DGPS Surveying", detail: "Field Training" },
               { label: "Drone Mapping", detail: "Survey & Analysis" },
+              { label: "Researcher Focus", detail: "Multispectral/TLS" },
               { label: "Bathymetry", detail: "Water Body Survey" },
-              { label: "Panel Meeting", detail: "Regulatory Insights" },
+              { label: "Stakeholders", detail: "Panel Meeting" },
             ].map((item, i) => (
               <div key={i} className="p-6 text-left border border-slate-100 bg-white shadow-sm flex flex-col justify-between hover:border-primary/30 transition-colors group">
                 <span className="text-primary font-bold text-xs uppercase tracking-widest mb-4">Phase 0{i+1}</span>

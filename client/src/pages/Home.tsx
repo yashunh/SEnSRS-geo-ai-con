@@ -60,6 +60,16 @@ export default function Home() {
 
         <Schedule />
         
+        {/* Partners Logos Section */}
+        <section className="py-12 bg-white border-b border-slate-100">
+          <div className="container px-4 mx-auto text-center">
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-8">Our Distinguished Partners</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+              <img src="@assets/image_1768892048965.png" alt="Partners Logos" className="h-16 md:h-24 w-auto object-contain" />
+            </div>
+          </div>
+        </section>
+
         {/* Highlights Banner */}
         <div className="bg-primary py-12 overflow-hidden">
           <div className="flex whitespace-nowrap animate-infinite-scroll">
