@@ -60,12 +60,28 @@ export default function Home() {
 
         <Schedule />
         
-        {/* Partners Logos Section */}
-        <section className="py-12 bg-white border-b border-slate-100">
+        {/* Partners & Sponsors Section */}
+        <section className="py-20 bg-white border-b border-slate-100">
           <div className="container px-4 mx-auto text-center">
-            <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 mb-8">Our Distinguished Partners</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-              <img src="@assets/image_1768892048965.png" alt="Partners Logos" className="h-16 md:h-24 w-auto object-contain" />
+            <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-12">Our Partners & Sponsors</h3>
+            <div className="flex justify-center items-center">
+              <div className="relative group max-w-5xl mx-auto overflow-hidden rounded-xl border border-slate-100 p-8 bg-slate-50/50">
+                <img 
+                  src="@assets/image_1768892762536.png" 
+                  alt="GEO AI CON Partners" 
+                  className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02]" 
+                />
+                <div className="absolute inset-0 border-2 border-primary/5 rounded-xl pointer-events-none" />
+              </div>
+            </div>
+            <div className="mt-8 flex justify-center gap-8 text-[9px] font-bold text-slate-400 uppercase tracking-widest">
+              <span>Technical Partner</span>
+              <span className="text-primary/20">•</span>
+              <span>Knowledge Partner</span>
+              <span className="text-primary/20">•</span>
+              <span>Industry Partner</span>
+              <span className="text-primary/20">•</span>
+              <span>Government Partner</span>
             </div>
           </div>
         </section>
