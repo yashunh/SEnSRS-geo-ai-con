@@ -45,50 +45,46 @@ export default function Registration() {
             whileInView={{ opacity: 1, scale: 1 }}
             className="bg-white text-slate-900 rounded-3xl p-8 shadow-2xl relative"
           >
-            <div className="absolute -top-4 -right-4 bg-accent text-slate-900 font-bold px-4 py-2 rounded-full shadow-lg transform rotate-6">
-              20% Off for ISRS Members
+            <div className="absolute -top-4 -right-4 bg-accent text-white font-bold px-4 py-2 rounded-full shadow-lg transform rotate-6 text-xs uppercase tracking-widest">
+              Special Institutional Rates
             </div>
 
-            <h3 className="text-2xl font-bold mb-6 font-display">Registration Fees</h3>
+            <h3 className="text-2xl font-bold mb-6 font-display text-primary">Registration Fees</h3>
             
-            <div className="space-y-4 mb-8">
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="font-semibold text-slate-700">General Registration</span>
-                  <span className="text-2xl font-bold text-primary">₹5,000</span>
+            <div className="space-y-3 mb-8">
+              {[
+                { label: "Regular Registration", price: "₹5,000" },
+                { label: "ISRS Member", price: "₹4,000" },
+                { label: "PhD Scholars", price: "₹3,000" },
+                { label: "Student", price: "₹2,500" },
+                { label: "Govt. Officials (Mining Dept.)", price: "₹1,000", note: "(For Registration Kit & Lunch)" },
+              ].map((item, i) => (
+                <div key={i} className="p-4 rounded-xl bg-slate-50 border border-slate-100 flex justify-between items-center group hover:border-primary/30 transition-colors">
+                  <div>
+                    <span className="font-bold text-slate-700 block">{item.label}</span>
+                    {item.note && <span className="text-[10px] text-slate-400 font-medium">{item.note}</span>}
+                  </div>
+                  <span className="text-xl font-black text-primary">{item.price}</span>
                 </div>
-                <p className="text-sm text-slate-500">Per Person</p>
-              </div>
-
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="font-semibold text-slate-700">Govt. Officials</span>
-                  <span className="text-2xl font-bold text-secondary">₹1,000</span>
-                </div>
-                <p className="text-sm text-slate-500">For Geology & Mining officials</p>
-              </div>
+              ))}
             </div>
 
-            <div className="space-y-3 mb-8">
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <CheckCircle2 className="w-4 h-4 text-green-500" />
+            <div className="space-y-3 mb-8 p-4 bg-primary/5 rounded-xl border border-primary/10">
+              <div className="flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider">
+                <CheckCircle2 className="w-4 h-4" />
+                <span>No Charges for Day-5 (Panel Meeting)</span>
+              </div>
+              <div className="flex items-center gap-2 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+                <CheckCircle2 className="w-3 h-3 text-slate-300" />
                 <span>Includes Participation Certification</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <CheckCircle2 className="w-4 h-4 text-green-500" />
-                <span>Hands-on DGPS & Drone Training</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-slate-600">
-                <CheckCircle2 className="w-4 h-4 text-green-500" />
-                <span>Networking with Mining Officers</span>
-              </div>
             </div>
 
-            <button className="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
-              Register Now
+            <button className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+              PROCEED TO REGISTER
             </button>
-            <p className="text-center text-xs text-slate-400 mt-4">
-              *Accommodation & Travel Allowance as per IIT Rules
+            <p className="text-center text-[10px] font-black uppercase tracking-widest text-slate-400 mt-4">
+              **For accommodation, IIT Rules will be Applicable
             </p>
           </motion.div>
         </div>
