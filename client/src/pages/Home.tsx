@@ -4,7 +4,7 @@ import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
-import iitRoparImg from "@assets/generated_images/academic_building_at_iit_ropar_with_modern_architecture.png";
+import iitRoparImg from "@assets/ChatGPT_Image_Jan_19,_2026,_02_59_38_PM_1768892523226.png";
 import dgpsImg from "@assets/generated_images/surveyor_with_dgps_equipment_in_the_field.png";
 import droneImg from "@assets/generated_images/multispectral_drone_taking_off_from_a_river_bank.png";
 

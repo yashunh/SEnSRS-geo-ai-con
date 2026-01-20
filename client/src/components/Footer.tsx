@@ -42,49 +42,73 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="text-white font-bold mb-6 border-b border-slate-800 pb-2">Organizing Team & Contributors</h4>
+            <h4 className="text-white font-bold mb-6 border-b border-slate-800 pb-2 uppercase tracking-widest text-xs">Organizing Team & Contributors</h4>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm">
-              <div>
-                <div className="mb-4">
-                  <h5 className="text-primary font-medium mb-1">Patron</h5>
-                  <p className="text-white">Prof.(Dr.) Rajeev Ahuja</p>
-                  <p className="text-xs text-slate-500">Director, IIT Ropar</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8 text-sm">
+              <div className="space-y-6">
+                <div>
+                  <h5 className="text-primary font-black uppercase tracking-widest text-[10px] mb-2">Patron</h5>
+                  <div className="flex flex-col">
+                    <span className="text-white font-bold">Prof.(Dr.) Rajeev Ahuja</span>
+                    <span className="text-[10px] text-slate-500 uppercase tracking-tight">Director, IIT Ropar</span>
+                  </div>
                 </div>
                 
-                <div className="mb-4">
-                  <h5 className="text-primary font-medium mb-1">Organising Secretary</h5>
-                  <p className="text-white">Dr. Reet Kamal Tiwari</p>
-                  <p className="text-xs text-slate-500">Centre Coordinator, SEnSRS</p>
-                </div>
-
-                <div className="mb-4">
-                  <h5 className="text-primary font-medium mb-1">Convener</h5>
-                  <p className="text-white">Dr. Sartajvir Singh Dhillon</p>
-                  <p className="text-xs text-slate-500">Chief Scientific Officer, SEnSRS</p>
+                <div>
+                  <h5 className="text-primary font-black uppercase tracking-widest text-[10px] mb-2">Organising Secretary</h5>
+                  <div className="flex flex-col">
+                    <span className="text-white font-bold">Dr. Reet Kamal Tiwari</span>
+                    <span className="text-[10px] text-slate-500 uppercase tracking-tight">Centre Coordinator, SEnSRS</span>
+                  </div>
                 </div>
 
                 <div>
-                  <h5 className="text-primary font-medium mb-1">Co-Conveners</h5>
-                  <p>Dr. Naveen James, Dr. Navin Gopinathan,</p>
-                  <p>Dr. Shray Pathak, Dr. Sreekumar Jayadevan</p>
+                  <h5 className="text-primary font-black uppercase tracking-widest text-[10px] mb-2">Convener</h5>
+                  <div className="flex flex-col">
+                    <span className="text-white font-bold">Dr. Sartajvir Singh Dhillon</span>
+                    <span className="text-[10px] text-slate-500 uppercase tracking-tight">Chief Scientific Officer, SEnSRS</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 className="text-primary font-black uppercase tracking-widest text-[10px] mb-2">Co-Conveners</h5>
+                  <div className="grid grid-cols-1 gap-1">
+                    <span className="text-white">Dr. Naveen James</span>
+                    <span className="text-white">Dr. Navin Gopinathan</span>
+                    <span className="text-white">Dr. Shray Pathak</span>
+                    <span className="text-white">Dr. Sreekumar Jayadevan</span>
+                    <span className="text-[10px] text-slate-500 uppercase tracking-tight">Co-Coordinator, SEnSRS</span>
+                  </div>
                 </div>
               </div>
 
-              <div>
-                <div className="mb-4">
-                  <h5 className="text-primary font-medium mb-1">Organising Team</h5>
-                  <ul className="space-y-1 text-slate-400">
-                    <li>Dr. Vishakha Sood, Dr. Swati Sharma</li>
-                    <li>Mr. Arush Sharma, Mr. Ashish Maurya</li>
-                    <li>Ms. Apoorva Sharma, Mr. Md. Hamidur Rahman</li>
-                    <li>Dr. Ravindra Negi, Mr. Shreekuttan E</li>
-                    <li>Mr. Prabhudutta Arya, Mr. Amritesh Singh</li>
-                    <li>Mr. Mohit Patial, Mr. Mohit Thakur</li>
-                    <li>Mr. Randeep Singh, Mrs. Gurparkash Kaur</li>
-                    <li>Ms. Tania Vohra, Mr. Harwinder Singh</li>
-                    <li>Mr. Sukhwinder Singh</li>
-                  </ul>
+              <div className="space-y-4">
+                <h5 className="text-primary font-black uppercase tracking-widest text-[10px] mb-2">Organising Team</h5>
+                <div className="grid grid-cols-1 gap-3">
+                  {[
+                    { name: "Dr. Vishakha Sood", role: "Project Scientist, SEnSRS" },
+                    { name: "Dr. Swati Sharma", role: "Senior Scientist, SEnSRS" },
+                    { name: "Mr. Arush Sharma", role: "Technical Supervisor, SEnSRS" },
+                    { name: "Mr. Ashish Maurya", role: "Senior Field Surveyor, SEnSRS" },
+                    { name: "Ms. Apoorva Sharma", role: "Data Scientist, SEnSRS" },
+                    { name: "Mr. Md. Hamidur Rahman", role: "GIS Scientist, SEnSRS" },
+                    { name: "Dr. Ravindra Negi", role: "Research Assistant, ICSSR" },
+                    { name: "Mr. Shreekuttan E", role: "Research Assistant, ICSSR" },
+                    { name: "Mr. Prabhudutta Arya", role: "Field Investigator, ICSSR" },
+                    { name: "Mr. Amritesh Singh", role: "Field Investigator, ICSSR" },
+                    { name: "Mr. Mohit Patial", role: "Data Analyst" },
+                    { name: "Mr. Mohit Thakur", role: "Field Surveyor, SEnSRS" },
+                    { name: "Mr. Randeep Singh", role: "Field Surveyor, SEnSRS" },
+                    { name: "Mrs. Gurparkash Kaur", role: "Office Executive, SEnSRS" },
+                    { name: "Ms. Tania Vohra", role: "Office Executive, SEnSRS" },
+                    { name: "Mr. Harwinder Singh", role: "Office Attendant, SEnSRS" },
+                    { name: "Mr. Sukhwinder Singh", role: "Office Attendant, SEnSRS" }
+                  ].map((member, i) => (
+                    <div key={i} className="flex flex-col border-l border-slate-800 pl-3">
+                      <span className="text-white font-medium text-xs">{member.name}</span>
+                      <span className="text-[9px] text-slate-500 uppercase tracking-tighter">{member.role}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
