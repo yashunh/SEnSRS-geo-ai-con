@@ -19,55 +19,40 @@ export default function Home() {
         {/* Gallery/Flyer Style Section */}
         <section className="py-24 border-y border-slate-100 bg-slate-50">
           <div className="container px-4 mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 gap-4 grid-auto-rows-[400px]">
               <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className="relative group overflow-hidden rounded-xl shadow-lg h-[450px]"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="relative group overflow-hidden md:col-span-2 rounded-xl shadow-lg"
               >
                 <img src={iitRoparImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="IIT Ropar" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-6 flex flex-col justify-end">
-                  <h3 className="text-2xl font-black italic uppercase leading-tight text-white">Venue: IIT Ropar</h3>
-                  <p className="text-white/80 text-xs font-bold uppercase tracking-widest mt-1">Main Campus</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-8 flex flex-col justify-end">
+                  <h3 className="text-4xl font-black italic uppercase text-white">Venue: IIT Ropar</h3>
+                  <p className="text-white/80 font-bold">C-114, SAB Building, Rupnagar Punjab</p>
                 </div>
               </motion.div>
-
               <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="relative group overflow-hidden rounded-xl shadow-lg h-[450px]"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="relative group overflow-hidden rounded-xl shadow-lg"
               >
                 <img src={dgpsImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="DGPS Training" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-6 flex flex-col justify-end">
-                  <h3 className="text-2xl font-black italic uppercase leading-tight text-white">Hands-on DGPS</h3>
-                  <p className="text-white/80 text-xs font-bold uppercase tracking-widest mt-1">Field Training</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-8 flex flex-col justify-end">
+                  <h3 className="text-2xl font-black italic uppercase leading-none text-white">Hands-on DGPS</h3>
+                  <p className="text-accent text-xs font-bold uppercase tracking-widest mt-2">Professional Training</p>
                 </div>
               </motion.div>
-
               <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="relative group overflow-hidden rounded-xl shadow-lg h-[450px]"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                className="relative group overflow-hidden md:col-span-3 h-[300px] rounded-xl shadow-lg"
               >
                 <img src={droneImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Drone Surveying" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-6 flex flex-col justify-end">
-                  <h3 className="text-2xl font-black italic uppercase leading-tight text-white">Drone Mapping</h3>
-                  <p className="text-white/80 text-xs font-bold uppercase tracking-widest mt-1">Aerial Survey</p>
-                </div>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="relative group overflow-hidden rounded-xl shadow-lg h-[450px]"
-              >
-                <img src={bathyImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bathymetry Survey" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-6 flex flex-col justify-end">
-                  <h3 className="text-2xl font-black italic uppercase leading-tight text-white">Bathymetry</h3>
-                  <p className="text-white/80 text-xs font-bold uppercase tracking-widest mt-1">Underwater Survey</p>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent p-8 flex flex-col justify-center">
+                  <div className="max-w-xl">
+                    <h3 className="text-4xl font-black italic uppercase leading-none mb-4 text-white">Advanced Drone Mapping</h3>
+                    <p className="text-white/90 font-medium">Master multispectral, TLS, and hyperspectral data collection in real-world environments.</p>
+                  </div>
                 </div>
               </motion.div>
             </div>
