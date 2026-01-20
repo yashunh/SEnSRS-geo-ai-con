@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin, Calendar, Users, Map as MapIcon, ShieldCheck, Zap } from "lucide-react";
-import heroBg from "@assets/generated_images/futuristic_drone_surveying_landscape_with_digital_topography.png";
+
+const heroBg = "/generated_images/futuristic_drone_surveying_landscape_with_digital_topography.png";
 
 export default function Hero() {
   return (

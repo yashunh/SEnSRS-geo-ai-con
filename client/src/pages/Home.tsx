@@ -4,10 +4,11 @@ import Registration from "@/components/Registration";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
-import iitRoparImg from "@assets/image_1768892679361.png";
-import dgpsImg from "@assets/generated_images/high-precision_dgps_surveying_in_a_river_sand_mining_site.png";
-import droneImg from "@assets/generated_images/multispectral_drone_taking_off_from_a_river_bank.png";
-import bathyImg from "@assets/image_1768894507601.png";
+
+const iitRoparImg = "/image_1768892679361.png";
+const dgpsImg = "/generated_images/high-precision_dgps_surveying_in_a_river_sand_mining_site.png";
+const droneImg = "/generated_images/multispectral_drone_taking_off_from_a_river_bank.png";
+const bathyImg = "/image_1768894507601.png";
 
 export default function Home() {
   return (
@@ -68,7 +69,7 @@ export default function Home() {
             <div className="flex justify-center items-center">
               <div className="relative group max-w-5xl mx-auto overflow-hidden rounded-xl border border-slate-100 p-8 bg-slate-50/50">
                 <img 
-                  src="@assets/4_Working_Day_1768894154585.png" 
+                  src="/4_Working_Day_1768894154585.png" 
                   alt="GEO AI CON Partners" 
                   className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02] rotate-180" 
                 />
