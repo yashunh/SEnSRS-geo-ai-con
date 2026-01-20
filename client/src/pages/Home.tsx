@@ -67,9 +67,9 @@ export default function Home() {
             <div className="flex justify-center items-center">
               <div className="relative group max-w-5xl mx-auto overflow-hidden rounded-xl border border-slate-100 p-8 bg-slate-50/50">
                 <img 
-                  src="@assets/image_1768892762536.png" 
+                  src="@assets/4_Working_Day_1768894154585.png" 
                   alt="GEO AI CON Partners" 
-                  className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02]" 
+                  className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02] rotate-180" 
                 />
                 <div className="absolute inset-0 border-2 border-primary/5 rounded-xl pointer-events-none" />
               </div>
