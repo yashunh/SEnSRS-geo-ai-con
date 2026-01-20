@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import iitRoparImg from "@assets/image_1768892679361.png";
-import dgpsImg from "@assets/generated_images/surveyor_with_dgps_equipment_in_the_field.png";
+import dgpsImg from "@assets/generated_images/high-precision_dgps_surveying_in_a_river_sand_mining_site.png";
 import droneImg from "@assets/generated_images/multispectral_drone_taking_off_from_a_river_bank.png";
 
 export default function Home() {
