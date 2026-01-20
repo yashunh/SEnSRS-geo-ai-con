@@ -39,10 +39,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="max-w-5xl mx-auto mb-6 text-6xl font-black tracking-tighter md:text-8xl font-display uppercase italic text-slate-900"
+            className="max-w-5xl mx-auto mb-6 text-6xl font-black tracking-tighter md:text-8xl font-display uppercase italic text-slate-900 flex flex-col items-center"
           >
-            GEO AI <span className="text-primary">CON</span> <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary">Intersession</span>
+            <span className="text-xs font-black tracking-[0.5em] text-primary not-italic mb-2 opacity-80">2026</span>
+            <div>
+              GEO AI <span className="text-primary px-2">CON</span>
+            </div>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary px-4">Intersection</span>
           </motion.h1>
 
           <motion.div
