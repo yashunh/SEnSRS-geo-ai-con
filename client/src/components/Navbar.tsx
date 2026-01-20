@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link href="/">
             <a className="text-xl font-bold font-display tracking-tighter flex items-center gap-2">
               <img src="https://sensrs.com/_next/image?url=%2Fimages%2Fsensrsfooterlogo-removebg.png&w=3840&q=75" alt="SEnSRS Logo" className="h-10 w-auto" />
-              <span className="hidden sm:inline">GEO AI CON: Intersession</span>
+              <span className="hidden sm:inline">GEO AI CON: INTERSESSION 2026</span>
             </a>
           </Link>
 

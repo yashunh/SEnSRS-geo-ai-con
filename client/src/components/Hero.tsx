@@ -45,7 +45,7 @@ export default function Hero() {
             <div>
               GEO AI <span className="text-primary px-2">CON</span>
             </div>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary px-4">Intersection</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary px-4">Intersession</span>
           </motion.h1>
 
           <motion.div
