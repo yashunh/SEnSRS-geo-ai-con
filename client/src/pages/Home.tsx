@@ -45,27 +45,23 @@ export default function Home() {
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className="relative group overflow-hidden md:col-span-3 h-[300px] rounded-xl shadow-lg"
+                className="relative group overflow-hidden rounded-xl shadow-lg h-[400px]"
               >
                 <img src={droneImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Drone Surveying" />
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent p-8 flex flex-col justify-center">
-                  <div className="max-w-xl">
-                    <h3 className="text-4xl font-black italic uppercase leading-none mb-4 text-white">Advanced Drone Mapping</h3>
-                    <p className="text-white/90 font-medium">Master multispectral, TLS, and hyperspectral data collection in real-world environments.</p>
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-8 flex flex-col justify-end">
+                  <h3 className="text-2xl font-black italic uppercase leading-none mb-2 text-white">Drone Mapping</h3>
+                  <p className="text-white/90 text-sm font-medium">Multispectral & TLS data collection.</p>
                 </div>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className="relative group overflow-hidden md:col-span-3 h-[300px] rounded-xl shadow-lg"
+                className="relative group overflow-hidden rounded-xl shadow-lg h-[400px]"
               >
                 <img src={bathyImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bathymetry Survey" />
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent p-8 flex flex-col justify-center">
-                  <div className="max-w-xl">
-                    <h3 className="text-4xl font-black italic uppercase leading-none mb-4 text-white">Hands-on Bathymetry Survey</h3>
-                    <p className="text-white/90 font-medium">Remote-controlled bathymetric surveying for precise underwater mapping and volumetric analysis.</p>
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-8 flex flex-col justify-end">
+                  <h3 className="text-2xl font-black italic uppercase leading-none mb-2 text-white">Bathymetry</h3>
+                  <p className="text-white/90 text-sm font-medium">Remote-controlled underwater mapping.</p>
                 </div>
               </motion.div>
             </div>
