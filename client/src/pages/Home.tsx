@@ -19,27 +19,27 @@ export default function Home() {
         {/* Gallery/Flyer Style Section */}
         <section className="py-24 border-y border-slate-100 bg-slate-50">
           <div className="container px-4 mx-auto">
-            <div className="grid md:grid-cols-3 gap-4 grid-auto-rows-[400px]">
+            <div className="grid md:grid-cols-3 gap-4">
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className="relative group overflow-hidden md:col-span-2 rounded-xl shadow-lg"
+                className="relative group overflow-hidden md:col-span-2 rounded-xl shadow-lg h-[400px]"
               >
-                <img src={iitRoparImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="IIT Ropar" />
+                <img src={droneImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Drone Surveying" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-8 flex flex-col justify-end">
-                  <h3 className="text-4xl font-black italic uppercase text-white">Venue: IIT Ropar</h3>
-                  <p className="text-white/80 font-bold">C-114, SAB Building, Rupnagar Punjab</p>
+                  <h3 className="text-4xl font-black italic uppercase text-white">Advanced Drone Mapping</h3>
+                  <p className="text-white/80 font-bold">Master multispectral, TLS, and hyperspectral data collection.</p>
                 </div>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                className="relative group overflow-hidden rounded-xl shadow-lg"
+                className="relative group overflow-hidden rounded-xl shadow-lg h-[400px]"
               >
-                <img src={dgpsImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="DGPS Training" />
+                <img src={bathyImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bathymetry Survey" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-8 flex flex-col justify-end">
-                  <h3 className="text-2xl font-black italic uppercase leading-none text-white">Hands-on DGPS</h3>
-                  <p className="text-accent text-xs font-bold uppercase tracking-widest mt-2">Professional Training</p>
+                  <h3 className="text-2xl font-black italic uppercase leading-none text-white">Bathymetry</h3>
+                  <p className="text-accent text-xs font-bold uppercase tracking-widest mt-2">Underwater Mapping</p>
                 </div>
               </motion.div>
               <motion.div 
@@ -47,11 +47,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 className="relative group overflow-hidden md:col-span-3 h-[300px] rounded-xl shadow-lg"
               >
-                <img src={droneImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Drone Surveying" />
+                <img src={iitRoparImg} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="IIT Ropar" />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent p-8 flex flex-col justify-center">
                   <div className="max-w-xl">
-                    <h3 className="text-4xl font-black italic uppercase leading-none mb-4 text-white">Advanced Drone Mapping</h3>
-                    <p className="text-white/90 font-medium">Master multispectral, TLS, and hyperspectral data collection in real-world environments.</p>
+                    <h3 className="text-4xl font-black italic uppercase leading-none mb-4 text-white">Venue: IIT Ropar</h3>
+                    <p className="text-white/90 font-medium">C-114, SAB Building, Rupnagar Punjab. Experience world-class research facilities.</p>
                   </div>
                 </div>
               </motion.div>
