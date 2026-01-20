@@ -70,7 +70,9 @@ export default function Schedule() {
                 <div className="flex flex-wrap items-center gap-6">
                   {item.speaker && (
                     <div className="flex flex-col">
-                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Expert Lead</span>
+                      <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">
+                        {item.day === "Day 5" ? "Attendance" : "Expert Lead"}
+                      </span>
                       <span className="font-bold text-lg text-slate-700">{item.speaker}</span>
                     </div>
                   )}
