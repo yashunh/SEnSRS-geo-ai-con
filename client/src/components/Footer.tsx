@@ -84,7 +84,7 @@ export default function Footer() {
 
               <div className="space-y-4">
                 <h5 className="text-primary font-black uppercase tracking-widest text-[10px] mb-2">Organising Team</h5>
-                <div className="grid grid-cols-1 gap-3">
+                <div className="grid grid-cols-2 gap-x-6 gap-y-3">
                   {[
                     { name: "Dr. Vishakha Sood", role: "Project Scientist, SEnSRS" },
                     { name: "Dr. Swati Sharma", role: "Senior Scientist, SEnSRS" },
@@ -105,7 +105,7 @@ export default function Footer() {
                     { name: "Mr. Sukhwinder Singh", role: "Office Attendant, SEnSRS" }
                   ].map((member, i) => (
                     <div key={i} className="flex flex-col border-l border-slate-800 pl-3">
-                      <span className="text-white font-medium text-xs">{member.name}</span>
+                      <span className="text-white font-medium text-xs whitespace-nowrap">{member.name}</span>
                       <span className="text-[9px] text-slate-500 uppercase tracking-tighter">{member.role}</span>
                     </div>
                   ))}
