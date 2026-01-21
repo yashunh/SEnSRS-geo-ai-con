@@ -63,13 +63,13 @@ export default function Home() {
         <Schedule />
         
         {/* Partners & Sponsors Section */}
-        <section className="py-20 bg-white border-b border-slate-100">
+        <section className="pb-20 bg-white border-b border-slate-100">
           <div className="container px-4 mx-auto text-center">
             <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-12">Our Partners & Sponsors</h3>
             <div className="flex justify-center items-center">
               <div className="relative group max-w-5xl mx-auto overflow-hidden rounded-xl border border-slate-100 p-8 bg-slate-50/50">
                 <img 
-                  src="/4_Working_Day_1768894154585.png" 
+                  src="/4_Working_Day_1768894154585(1).png" 
                   alt="GEO AI CON Partners" 
                   className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.02]" 
                 />
