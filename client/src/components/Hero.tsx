@@ -44,7 +44,7 @@ export default function Hero() {
           >
             <span className="text-xs font-black tracking-[0.5em] text-primary not-italic mb-2 opacity-80">2026</span>
             <div>
-              GEO AI <span className="text-primary px-2">CON</span>
+              GEOAI <span className="text-primary px-2">CON</span>
             </div>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-600 to-primary px-4">Intersession</span>
           </motion.h1>
